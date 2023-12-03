@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="popup" id="popup" style="display: flex;">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="ins">Instrutions</h2>
+    <p style="width: 600px;"><b class="glov">Please ensure to wear appropriate protective gear such as gloves, goggles, and a lab coat before initiating the chemical reaction. Safety precautions are essential to prevent any potential hazards and ensure a safe experiment</b></p>
+    <img src="./gloves.png" alt="Popup Image" style="width: 300px; height: 300px;">
+
+    <hr>
+    <div class="permission">
+      <div class="col-sm-6">
+        <label for="flask" class="form-label"><P>Please select anyone flask  </P> </label>
+        <select name="flask" id="flask" class="form-control">
+        <option value="a">5 ML of 0.1M POTASSIUM IODIDE</option>
+        <option value="b">10 ML OF 0.1M POTASSIUM IODIDE</option>
+        <option value="c">15ML OF 0.1M POTASSIUM IODIDE</option>
+            <option value="d"> 20 ML OF 0.1M POTASSIUM IODIDE</option>
+        </select>
+    </div>
+    <br><br>
+    <div class="col-sm-6">
+        <label for="lang" class="form-label">Please select the language</label>
+        <select name="lang" id="lang" class="form-control">
+            <option value="hi">Hindi</option>
+            <option value="en">English</option>
+    
+        </select>
+    </div>
+    </div>
+<br>
+    <button  onclick="closePopup()" style="display: flex; justify-content: center; align-items: center; background-color: green; color: black; height: 45px; width: 100px; font-size: 22px; cursor: pointer;">Proceed</button>
+  </div>
+
+</div>
+
+    <header class="header"><h1 id="header">TO STUDY THE KINETICS OF IODIDE HYDROGEN PEROXIDE CLOCK REACTION</h1></header>
+    <br>
+    <div class="container">
+    <div class="instructions">
+        <h2 class="instruct">INSTRUCTIONS</h2>
+        <h3 id="instruction"></h3>
+        <div class="con" style="margin-top: 20px;">
+            <img src="./2348493.jpg" alt="" style="height: 250px; width: 100%;"></div>
+            <p><b style="color: wheat;" id="timer">Timer</b></p>
+            <div class="stopwatch-container">
+           
+                <div class="stopwatch" id="stopwatch">00:00:00:00</div>
+                <div class="btn-container">
+                  <button onclick="startStopwatch()" style="background-color: greenyellow; color: black;">Start</button>
+                  <button onclick="stopStopwatch()" style="background-color: orangered; color: black;">Stop</button>
+                  <button onclick="resetStopwatch()" style="background-color: yellow; color: black;">Reset</button>
+                </div>
+              </div>
+        
+    </div>
+    <!-- <img src="./20mlflask .png" alt=""> -->
+    <br>
+    <img src="./stir.png" alt="" class="stir" id="stir">
+    <!-- stopwatch -->
+
+    <div class="lab">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/1/1d/20060427164747%21No_image.svg/120px-No_image.svg.png" class="flask img " id="flask15ml" alt="">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/1/1d/20060427164747%21No_image.svg/120px-No_image.svg.png" class="flask img " id="flask15ml" alt=""> -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/1/1d/20060427164747%21No_image.svg/120px-No_image.svg.png" class="flask img " id="flask15ml" alt="">
+<img src="20mlflask .png" class="flask img finalFlask" id="flask20ml" alt="flask20ml">
+<img src="emptybeaker.png" class="beaker img" id="emptybeaker">
+<img src="DISTILLED_-WATER1.png"  class="img water1 water step cursor" id="DISTILLED_-WATER1" title="distilled water"> 
+<img src="SulphuricAcid1.png" class="solution SulphuricAcid1 img clk step cursor" id="Sulphuricacid1" title="sulphuric acid"> 
+<img src="SODIUM THIOSULPHATE1.png" class="solution  img SodiumThiosulphate1 clk step cursor" id="SodiumThiosulphate1" alt="" title="sodium thiosulphate">
+<img src="STATCHSOLUTION1.png" class="solution img starch1 clk step cursor" id="starchsolution1" alt="starch1" title="STATCH SOLUTION">
+<img src="Hydrogen_peroxide_solution_3__1.png" class="img  hydrogen1 clk step cursor" id="Hydrogenperoxide1" title="Hydrogen peroxide">
+<!-- <img src="stir.png" class="img stiring" id="stirringrod" alt=""> -->
+</div>
+
+    
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
